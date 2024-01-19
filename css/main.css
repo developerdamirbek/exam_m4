@@ -210,7 +210,7 @@ body {
   width: 20px;
   height: 20px;
   display: inline-block;
-  background-image: url(/img/user-icon.svg);
+  background-image: url(../img/user-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -251,7 +251,7 @@ body {
   width: 22px;
   height: 24px;
   display: inline-block;
-  background-image: url(/img/product_cart.svg);
+  background-image: url(../img/product_cart.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -282,7 +282,7 @@ body {
   width: 21px;
   height: 21px;
   display: inline-block;
-  background-image: url("/img/search-icon.svg");
+  background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -400,7 +400,7 @@ body {
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url(/img/search-primary.svg);
+    background-image: url(../img/search-primary.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -427,7 +427,7 @@ body {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(/img/heart-icon.svg);
+    background-image: url(../img/heart-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -436,7 +436,7 @@ body {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background-image: url(/img/bell.svg);
+    background-image: url(../img/bell.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -542,7 +542,7 @@ body {
 #hero {
   padding-top: 258px;
   padding-bottom: 166px;
-  background-image: url(/img/bg-img.png);
+  background-image: url(../img/bg-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -564,7 +564,7 @@ body {
 
 @media screen and (max-width: 550px) {
   #hero {
-    background-image: url(/img/mobile-bg.png);
+    background-image: url(../img/mobile-bg.png);
     background-size: cover;
     padding-top: 48px;
     padding-bottom: 32px;
@@ -613,7 +613,7 @@ body {
 .item1 {
   width: 100%;
   height: 100%;
-  background-image: url(/img/mobile-bg.png);
+  background-image: url(../img/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -622,7 +622,7 @@ body {
 .item2 {
   width: 100%;
   height: 100%;
-  background-image: url(/img/mobile-bg.png);
+  background-image: url(../img/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -631,7 +631,7 @@ body {
 .item3 {
   width: 100%;
   height: 100%;
-  background-image: url(/img/mobile-bg.png);
+  background-image: url(../img/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -640,7 +640,7 @@ body {
 .item4 {
   width: 100%;
   height: 100%;
-  background-image: url(/img/mobile-bg.png);
+  background-image: url(../img/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -649,7 +649,7 @@ body {
 .item5 {
   width: 100%;
   height: 100%;
-  background-image: url(/img/mobile-bg.png);
+  background-image: url(../img/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1349,7 +1349,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 20px;
-  background-image: url(/img/search-icon.svg);
+  background-image: url(../img/search-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1434,7 +1434,7 @@ body {
   width: 69px;
   height: 79px;
   display: inline-block;
-  background-image: url(/img/service2.svg);
+  background-image: url(../img/service2.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1444,7 +1444,7 @@ body {
   width: 67px;
   height: 89px;
   display: inline-block;
-  background-image: url(/img/service3.svg);
+  background-image: url(../img/service3.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1454,7 +1454,7 @@ body {
   width: 101px;
   height: 66px;
   display: inline-block;
-  background-image: url(/img/service1.svg);
+  background-image: url(../img/service1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
