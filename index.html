@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<!-- Coding by Damirbek Xursanaliyev -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fbada8e694.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Lato:wght@400;700;900&family=Nunito:wght@700;800&family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,500;0,600;1,700&family=Red+Hat+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Damirbek Xursanaliyev | Exam Month 4</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="top_header">
+                <div class="container top_header__container">
+                    <div class="select_box">
+                        <select class="select_lang" name="lang" id="lang">
+                            <option value="EN">EN</option>
+                            <option value="RU">RU</option>
+                            <option value="UZ">UZ</option>
+                        </select>
+                        <select class="select_curr" name="curr" id="curr">
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="UZS">UZS</option>
+                        </select>
+                    </div>
+                    <div class="mobile_header">
+                        <div class="mobile_header__input__block">
+                            <input class="mobile_header__input" type="text" placeholder="Search Product">
+                            <div class="mobile_searchbar">
+
+                            </div>
+                        </div>
+                        <a class="liked_link" href=""></a>
+                        <a onclick="click()" class="mobile_cart__link"></a>
+                    </div>
+                    <div class="top_header__details">
+                        <a href="#" class="profile">
+                            My profile
+                        </a>
+                        <a class="cart_page">
+                            <span class="count">0</span>
+                        </a>
+                        <a href="#" class="cart_link">Items</a>
+                        <p class="header_price">
+                            $0.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add this modal structure to your HTML -->
+            <div class="modal" id="productModal">
+                <div class="modal-content">
+                    <!-- Content of your modal goes here -->
+                    <span class="close-modal" onclick="closeModal()">&times;</span>
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+
+            <div class="main_header">
+                <div class="container main_header__container">
+                    <a href="./index.html" class="logo_wrapper">
+                        <img src="./img/logo.svg" alt="logo">
+                        <p class="logo_text">E-Comm</p>
+                    </a>
+                    <ul class="header_list">
+                        <li class="header_list__item"><a href="#" class="header_link active">HOME</a></li>
+                        <li class="header_list__item"><a href="#" class="header_link">BAGS</a></li>
+                        <li class="header_list__item"><a href="#" class="header_link">SNEAKERS</a></li>
+                        <li class="header_list__item"><a href="#" class="header_link">BELT</a></li>
+                        <li class="header_list__item"><a href="#" class="header_link">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="toastBox">
+
+            </div>
+            <section id="hero">
+                <div class="container">
+                    <h1 class="hero_title">
+                        Super Flash Sale <br>
+                        50% Off
+                    </h1>
+                </div>
+            </section>
+            <section id="mobile_hero">
+                    <div class="slider">
+                        <div class="item item1">
+                            <div class="container">
+                                <h1 class="mobile_hero_title">
+                                    Super Flash Sale <br>
+                                    50% Off
+                                </h1>
+                                <div class="countdown">
+                                    <span class="timer" id="hours1"></span> :
+                                    <span class="timer" id="minutes1"></span> :
+                                    <span class="timer" id="seconds1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item2">
+                            <div class="container">
+                                <h1 class="mobile_hero_title">
+                                    Super Flash Sale <br>
+                                    50% Off
+                                </h1>
+                                <div class="countdown">
+                                    <span class="timer" id="hours2"></span> :
+                                    <span class="timer" id="minutes2"></span> :
+                                    <span class="timer" id="seconds2"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item3">
+                            <div class="container">
+                                <h1 class="mobile_hero_title">
+                                    Super Flash Sale <br>
+                                    50% Off
+                                </h1>
+                                <div class="countdown">
+                                    <span class="timer" id="hours3"></span> :
+                                    <span class="timer" id="minutes3"></span> :
+                                    <span class="timer" id="seconds3"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item4">
+                            <div class="container">
+                                <h1 class="mobile_hero_title">
+                                    Super Flash Sale <br>
+                                    50% Off
+                                </h1>
+                                <div class="countdown">
+                                    <span class="timer" id="hours4"></span> :
+                                    <span class="timer" id="minutes4"></span> :
+                                    <span class="timer" id="seconds4"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item5">
+                            <div class="container">
+                                <h1 class="mobile_hero_title">
+                                    Super Flash Sale <br>
+                                    50% Off
+                                </h1>
+                                <div class="countdown">
+                                    <span class="timer" id="hours5"></span> :
+                                    <span class="timer" id="minutes5"></span> :
+                                    <span class="timer" id="seconds5"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id="best_seller">
+                <div class="container best_seller__container">
+
+                </div>
+                <h2 class="best_seller__section__title">BEST SELLER</h2>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="tab_content">
+
+                    </div>
+
+                    <div class="products_searchbox">
+                        <input class="products_input" placeholder="Search products..." type="text">
+                        <div class="product_searchbar_content"></div>
+                    </div>
+                    <div class="products_wrapper">
+
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container services_container">
+                    <ul class="services_list">
+                        <li class="services_item">
+                            <h3 class="services_item__title">
+                                FREE SHIPPING
+                            </h3>
+                        </li>
+                        <li class="services_item">
+                            <h3 class="services_item__title">
+                                100% REFUND
+                            </h3>
+                        </li>
+                        <li class="services_item">
+                            <h3 class="services_item__title">
+                                SUPPORT 24/7
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="cart_section">
+                <span class="close-modal" onclick="closeCartModal()">&times;</span>
+                <h2 class="cart_page_title">CART PAGE</h2>
+                <div class="container">
+                    <div class="cart_infos">
+                        <h3 class="infos_text">
+                            PRODUCT
+                        </h3>
+                        <div class="infos2">
+                            <h3 class="infos_text">
+                                PRICE
+                            </h3>
+                            <h3 class="infos_text">
+                                QTY
+                            </h3>
+                            <h3 class="infos_text">
+                                UNIT PRICE
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="cart" id="cartSection">
+
+                    </div>
+                    <div class="cart_about_sec">
+                        <div class="coupon">
+                            <input class="coupon_input" placeholder="Voucher code" type="text">
+                            <button>Redeem</button>
+                        </div>
+                        <div class="cart_total_info">
+                            <div class="subtotal">
+                                <p>Subtotal</p>
+                                <p class="subtotal_price"></p>
+                            </div>
+                            <div class="subtotal">
+                                <p>Shipping fee</p>
+                                <p>$20</p>
+                            </div>
+                            <div class="subtotal">
+                                <p>Coupon</p>
+                                <p>No</p>
+                            </div>
+                            <div class="total">
+                                <h3>TOTAL</h3>
+                                <h3 class="total-price-cart"></h3>
+                            </div>
+                            <button class="checkout">Check out</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a href="#" class="footer_logo">
+                        <img src="./img/logo.svg" alt="logo">
+                        <p class="logo_text">E-Comm</p>
+                    </a>
+                    <p class="footer_text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.
+                    </p>
+                </li>
+                <li class="footer_item">
+                    <p class="footer_title">Follow Us</p>
+                    <p class="footer_text">
+                        Since the 1500s, when an unknown printer took a galley of type and scrambled.
+                    </p>
+                    <div class="footer_social_links">
+
+                        <a href="#" class="social_link">
+                            <img src="./img/facebook.svg" alt="facebook">
+                            
+                        </a>
+                        <a href="#" class="social_link">
+                            <img src="./img/twitter.svg" alt="twitter">
+                        </a>
+                    </div>
+                </li>
+                <li class="footer_item">
+                    <p class="footer_title">Contact Us</p>
+                    <p class="footer_text">
+                        E-Comm , 4578 Marmora Road, Glasgow D04 89GR
+                    </p>
+                </li>
+            </ul>
+            <hr color="#fff">
+            <div class="footer_bottom">
+                <p class="bottom_text">
+                    © 2018 Ecommerce theme by www.bisenbaev.com
+                </p>
+                <ul class="bottom_list">
+                    <li class="bottom_item">
+                        <a href="#" class="bottom_finance_link">
+                            <img src="./img/mastercard.svg" alt="mastercard icon">
+                        </a>                    
+                    </li>
+                    <li class="bottom_item">
+                        <a href="#" class="bottom_finance_link">
+                            <img src="./img/mastercard.svg" alt="mastercard icon">
+                        </a>                    
+                    </li>
+                    <li class="bottom_item">
+                        <a href="#" class="bottom_finance_link">
+                            <img src="./img/mastercard.svg" alt="mastercard icon">
+                        </a>                    
+                    </li>
+                    <li class="bottom_item">
+                        <a href="#" class="bottom_finance_link">
+                            <img src="./img/mastercard.svg" alt="mastercard icon">
+                        </a>                    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
